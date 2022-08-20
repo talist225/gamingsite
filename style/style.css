@@ -690,6 +690,11 @@ footer .info ul li:hover a i {
   footer .info {
     flex-direction: column;
   }
+  .games ul li .filterBx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .games {
