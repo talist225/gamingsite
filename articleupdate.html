@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="./style/articleupdate.css" />
+    <link rel="stylesheet" href="./style/carousel.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e48d166edc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Game Zone</a>
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./index.html">Games</a></li>
+        <li><a href="./index.html">Tournaments</a></li>
+        <li><a href="./index.html">Contact</a></li>
+        <li><a href="./articleupdate.html">Articles & Updates</a></li>
+      </ul>
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <input type="text" placeholder="Search Game" aria-label="Filter" />
+        </div>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu()"></div>
+    </header>
+    <div class="banner animeX" id="home">
+      <!-- <div class="container">
+        <h1 class="center">Articles & Updates</h1>
+
+        <article class="episode">
+          <div class="episode__number">
+            <img src="./imgs/EldenRing.jpg" alt="" />
+          </div>
+          <div class="episode__content">
+            <div class="title">Elden Ring</div>
+            <div class="story">
+              <p>
+                <h2>The Golden Order has been broken.</h2><br />
+                Rise, Tarnished, and be guided by grace to brandish the
+                power of the Elden Ring and become an Elden Lord in the
+                Lands Between. <br><br>In the Lands Between ruled by Queen Marika
+                the Eternal, the Elden Ring, the source of the Erdtree, has
+                been shattered.<br><br> Marika's offspring, demigods all, claimed
+                the shards of the Elden Ring known as the Great Runes, and
+                the mad taint of their newfound strength triggered a war:
+                The Shattering. A war that meant abandonment by the Greater
+                Will.<br><br> And now the guidance of grace will be brought to the
+                Tarnished who were spurned by the grace of gold and exiled
+                from the Lands Between. Ye dead who yet live, your grace
+                long lost, follow the path to the Lands Between beyond the
+                foggy sea to stand before the Elden Ring.<br><br> And become the
+                Elden Lord.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="episode">
+          <div class="episode__number"><img src="./imgs/DyingLight.jpg" alt=""></div>
+          <div class="episode__content">
+            <div class="title">Dying Light 2: Stay Human</div>
+            <div class="story">
+              <p>"Let go of me you mongrel!"</p>
+              <p>
+                The virus won and civilization has fallen back to the Dark Ages. The City, one of the last human settlements, is on the brink of collapse. Use your agility and combat skills to survive, and reshape the world. Your choices matter.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="episode">
+          <div class="episode__number"><img src="./imgs/GodOfWarRagnarok.jpg" alt=""></div>
+          <div class="episode__content">
+            <div class="title">God Of War: Ragnarok</div>
+            <div class="story">
+              <p>
+                <h2>A future, unwritten</h2>
+                Atreus seeks knowledge to help him understand the prophecy of “Loki” and establish his role in Ragnarök. Kratos must decide whether he will be chained by the fear of repeating his mistakes or break free of his past to be the father Atreus needs.
+              </p>
+              <p>
+                <h2>Instruments of war</h2>
+                The Leviathan Axe, Blades of Chaos and Guardian Shield return alongside a host of new abilities for both Kratos and Atreus. Kratos’ deadly Spartan skills will be tested like never before as he battles gods and monsters across Nine Realms to protect his family.
+              </p>
+              <p>
+                <h2>Explore vast realms</h2>
+                Journey through dangerous and stunning landscapes while facing a wide variety of enemy creatures, monsters and Norse gods as Kratos and Atreus search for answers.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="episode">
+          <div class="episode__number"><img src="./imgs/ClashRoyaleMob.jpg" alt=""></div>
+          <div class="episode__content">
+            <div class="title">ClashRoyale</div>
+            <div class="story">
+          <p>
+            <h2>Epic Real-Time card Battles</h2>
+            Clash Royale is a real-time multiplayer game starring the Royales, your favourite Clash characters and much, much more. Collect and upgrade dozens of cards featuring the Clash of Clans troops, spells and defenses you know and love, as well as the Royales: Princes, Knights, Baby Dragons and more. Knock the enemy King and Princesses from their towers to defeat your opponents and win Trophies, Crowns and glory in the Arena.
+          </p>
+          <p>
+            <h2>Lauch Is Only The Beginning!</h2>
+            Clash Royale has been constantly evolving to offer more user-friendly, more consistent and more fun online experiences for Supercell gamers.
+          </p>
+          <p><h2>See The Latest</h2>
+            To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for the latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the conversation.</p>
+            </div>
+          </div>
+        </article>
+      </div> -->
+      <section class="testim" id="testim">
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+          <ul class="dots" id="testim-dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
+
+          <div class="cont" id="testim-content">
+            <div class="active">
+              <div class="img"><img src="./imgs/EldenRing.jpg" /></div>
+              <h2>Elden Ring</h2>
+              <p>Elden ring</p>
+            </div>
+            <div>
+              <div class="img"><img src="./imgs/DyingLight.jpg" /></div>
+              <h2>Dying Light</h2>
+              <p>Dying Light</p>
+            </div>
+            <div>
+              <div class="img">
+                <img src="./imgs/ClashRoyale.jpg" />
+              </div>
+              <h2>Clash Royale</h2>
+              <p>Clash Royale</p>
+            </div>
+            <div>
+              <div class="img"><img src="./imgs/COCMob.jpg" /></div>
+              <h2>Clash of Clans</h2>
+              <p>Clash of Clans</p>
+            </div>
+            <div>
+              <div class="img"><img src="./imgs/RainbowSix.jpg" /></div>
+              <h2>Rainbow Six</h2>
+              <p>Rainbow Six</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div></div>
+    </div>
+    <script src="./js/articleupdate.js"></script>
+  </body>
+</html>

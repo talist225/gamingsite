@@ -20,11 +20,12 @@
         <li><a href="#games">Games</a></li>
         <li><a href="#tournaments">Tournaments</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="./articleupdate.html">Articles & Updates</a></li>
       </ul>
       <div class="action">
         <div class="searchBx">
           <a href="#"><i class="bx bx-search"></i></a>
-          <input type="text" placeholder="Search Game" />
+          <input type="text" placeholder="Search Game" aria-label="Filter"/>
         </div>
       </div>
       <div class="toggleMenu" onclick="toggleMenu()"></div>
@@ -74,6 +75,11 @@
         <li class="list active" data-filter="all">All</li>
         <li class="list" data-filter="pc">PC</li>
         <li class="list" data-filter="mobile">MOBILE</li>
+        <li><div class="filterBx">
+          <i class="bx bx-filter"></i>
+          <input type="text" placeholder="Filter" aria-label="Filter" id="searchInput" oninput="filterList()"/>
+        </div>
+        </li>
       </ul>
       <div class="cardBx">
         <div class="card" data-item="pc">
@@ -105,6 +111,10 @@
                     foggy sea to stand before the Elden Ring.<br><br> And become the
                     Elden Lord.
                   </p>
+                  <div class="cardBtn">
+                    <a href="#">Buy Now</a>
+                    <a href="./articleupdate.html">Articles & Updates</a>
+                  </div>
                 </div>
               </div>
             </h4>

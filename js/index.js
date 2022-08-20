@@ -81,3 +81,23 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+/*Filter*/
+document.querySelector("#searchInput").addEventListener("input", filterList);
+
+function filterList() {
+  const searchInput = document.querySelector("#searchInput");
+  const filter = searchInput.value.toLowerCase();
+  const cardItems = document.querySelectorAll(".card");
+
+  cardItems.forEach((item) => {
+    let text = item.textContent;
+    if (text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+/*Search Engine*/
