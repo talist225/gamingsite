@@ -25,7 +25,7 @@ body {
 .testim {
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 131%;
   transform: translateY(-50%);
 }
 
@@ -239,5 +239,8 @@ body {
   }
   .testim .cont div p {
     line-height: 25px;
+  }
+  .testim {
+    top: 112%;
   }
 }

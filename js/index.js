@@ -100,4 +100,10 @@ function filterList() {
   });
 }
 
-/*Search Engine*/
+/* Pop up filter */
+
+// When the user clicks on <div>, open the popup
+function handleFilterPopup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

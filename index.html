@@ -20,7 +20,7 @@
         <li><a href="#games">Games</a></li>
         <li><a href="#tournaments">Tournaments</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="./articleupdate.html">Articles & Updates</a></li>
+        <li><a href="./newsupdates.html">News & Updates</a></li>
       </ul>
       <div class="action">
         <div class="searchBx">
@@ -76,7 +76,10 @@
         <li class="list" data-filter="pc">PC</li>
         <li class="list" data-filter="mobile">MOBILE</li>
         <li><div class="filterBx">
-          <i class="bx bx-filter"></i>
+          
+          <div class="popup" onclick="handleFilterPopup()"><i class="bx bx-filter"></i>
+            <span class="popuptext" id="myPopup">By: Name/ Price/ Content</span>
+          </div>
           <input type="text" placeholder="Filter" aria-label="Filter" id="searchInput" oninput="filterList()"/>
         </div>
         </li>
@@ -113,7 +116,7 @@
                   </p>
                   <div class="cardBtn">
                     <a href="#">Buy Now</a>
-                    <a href="./articleupdate.html">Articles & Updates</a>
+                    <a href="./newsupdates.html">More News & Updates</a>
                   </div>
                 </div>
               </div>
