@@ -25,7 +25,7 @@
       <div class="action">
         <div class="searchBx">
           <a href="#"><i class="bx bx-search"></i></a>
-          <input type="text" placeholder="Search Game" aria-label="Filter"/>
+          <input type="text" placeholder="Search Game" aria-label="Filter" />
         </div>
       </div>
       <div class="toggleMenu" onclick="toggleMenu()"></div>
@@ -72,20 +72,32 @@
     <div class="games animeX" id="games">
       <h2>Popular Games</h2>
       <ul>
-        <li class="list active" data-filter="all">All</li>
+        <li class="list active" data-filter="all">ALL</li>
         <li class="list" data-filter="pc">PC</li>
         <li class="list" data-filter="mobile">MOBILE</li>
-        <li><div class="filterBx">
-          
-          <div class="popup" onclick="handleFilterPopup()"><i class="bx bx-filter"></i>
-            <span class="popuptext" id="myPopup">By: Name/ Price/ Content</span>
+        <li>
+          <div class="filterBx">
+            <div class="popup" onclick="handleFilterPopup()">
+              <i class="bx bx-filter"></i>
+              <span class="popuptext" id="myPopup">By: Name</span>
+            </div>
+            <input
+              type="text"
+              placeholder="Filter"
+              aria-label="Filter"
+              id="searchInput"
+              oninput="filterList()"
+            />
           </div>
-          <input type="text" placeholder="Filter" aria-label="Filter" id="searchInput" oninput="filterList()"/>
-        </div>
         </li>
       </ul>
-      <div class="cardBx">
-        <div class="card" data-item="pc">
+      <!--Cards-->
+      <div class="games">
+        <div id="cardsGrid" class="cardBx"></div>
+      </div>
+      <!--Cards end-->
+      <!-- <div class="cardBx">
+         <div class="card" data-item="pc">
           <img src="./imgs/EldenRing.jpg" alt="" />
           <div class="content">
             <h4>
@@ -93,6 +105,7 @@
               <button id="myBtn">
                 <i class="bx bx-info-circle"></i>
               </button>
+               </h4>
               <div id="myModal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
@@ -120,7 +133,7 @@
                   </div>
                 </div>
               </div>
-            </h4>
+           
             <div class="progress-line"><span></span></div>
             <div class="info">
               <p>Price<br /><span>$59.99</span></p>
@@ -132,7 +145,8 @@
         <div class="card" data-item="pc">
           <img src="./imgs/UnchartedLegacy.jpg" alt="" />
           <div class="content">
-            <h4>Uncharted: Legacy</h4>
+            <h4>Uncharted: Legacy
+            </h4>
             <div class="progress-line"><span></span></div>
             <div class="info">
               <p>Price<br /><span>$49.99</span></p>
@@ -144,7 +158,8 @@
         <div class="card" data-item="pc">
           <img src="./imgs/GodOfWarRagnarok.jpg" alt="" />
           <div class="content">
-            <h4>God Of War: Ragnarok</h4>
+            <h4>God Of War: Ragnarok
+            </h4>
             <div class="progress-line"><span></span></div>
             <div class="info">
               <p>Price<br /><span>$59.99</span></p>
@@ -260,7 +275,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!--Tournaments-->
@@ -381,7 +396,9 @@
         </ul>
       </div>
     </footer>
-
+    <script src="./js/models/gameList.model.js"></script>
+    <script src="./js/dataInitializtion.js"></script>
+    <script src="./js/components/cardsGrid.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

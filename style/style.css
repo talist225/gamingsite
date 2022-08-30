@@ -584,6 +584,13 @@ footer .info ul li a i {
   color: #fff;
 }
 
+footer .info ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
 footer .info ul li:hover a i {
   color: #050e2d;
 }
@@ -710,7 +717,7 @@ footer .info ul li:hover a i {
 }
 
 .cardBx .card .content h4 button i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   transition: 0.2s;
 }
 
