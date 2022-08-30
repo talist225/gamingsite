@@ -2,7 +2,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Elden Ring",
-    "../imgs/EldenRing.jpg",
+    "./imgs/EldenRing.jpg",
     59.99,
     "<h2>System Requirements</h2><br><h3>Minumum</h3><br><b>Video Card:</b><br>Nvidia GeForce GTX 1060, 3GB | AMD Radeon RX 580, 4GB<br><b>CPU:</b><br>Intel Core i5-8400 | AMD Ryzen 3 3300X<br><b>RAM:</b><br>12 GB<br><b>OS:</b><br>Windows 10<br><b>Free Disk Space:</b><br>60 GB<br><b>Sound Card:</b><br>Yes",
     1
@@ -10,7 +10,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Horizon Forbidden West",
-    "../imgs/HorizonForbiddenWest.jpg",
+    "./imgs/HorizonForbiddenWest.jpg",
     39.99,
     "<h2>System Requirements</h2><br><h3>Minumum</h3><br><b>Video Card:</b><br>AMD Radeon RX 570 4GB or NVIDIA GeForce GTX 970 4GB<br><b>CPU:</b><br>Intel Core i5-2500K 3.3GHz / AMD FX-8320<br><b>RAM:</b><br>8 GB<br><b>OS:</b><br>Windows 10<br><b>Free Disk Space:</b><br>70 GB<br><b>Sound Card:</b><br>Yes",
     2
@@ -18,7 +18,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Uncharted: Legacy Of Thieves",
-    "../imgs/UnchartedLegacy.jpg",
+    "./imgs/UnchartedLegacy.jpg",
     49.99,
     "<h2>System Requirements</h2><br><h3>Minumum</h3><br><b>Video Card:</b><br> Nvidia GTX 960 4GB | AMD R9 290X 4GB<br><b>CPU:</b><br>Intel Core i5 2500k quad-core/ 3.3GHz | AMD Ryzen 3 1200 quad-core/3.1GHz<br><b>RAM:</b><br>8 GB<br><b>OS:</b><br>Windows 10<br><b>Free Disk Space:</b><br>65 GB<br><b>Sound Card:</b><br>Yes",
     3
@@ -26,7 +26,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Dying Light 2 - Stay Human",
-    "../imgs/DyingLight.jpg",
+    "./imgs/DyingLight.jpg",
     59.99,
     "Dying Light",
     4
@@ -34,7 +34,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Good Of War - Ragnarok",
-    "../imgs/GodOfWarRagnarok.jpg",
+    "./imgs/GodOfWarRagnarok.jpg",
     59.99,
     "God of War",
     5
@@ -42,7 +42,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Ghostwire Tokyo",
-    "../imgs/Ghostwire_Tokyo.jpg",
+    "./imgs/Ghostwire_Tokyo.jpg",
     59.99,
     "Ghostwire Tokyo",
     6
@@ -50,7 +50,7 @@ let gameListArr = [
   new gameList(
     "pc",
     "Rainbow Six: Extraction",
-    "../imgs/RainbowSix.jpg",
+    "./imgs/RainbowSix.jpg",
     59.99,
     "Rainbow SIx",
     7
@@ -58,7 +58,7 @@ let gameListArr = [
   new gameList(
     "mobile",
     "Archero",
-    "../imgs/ArcheroMob.jpg",
+    "./imgs/ArcheroMob.jpg",
     "Archero",
     "FREE",
     8
@@ -66,7 +66,7 @@ let gameListArr = [
   new gameList(
     "mobile",
     "Call of Duty",
-    "../imgs/CallOfDutyMob.jpg",
+    "./imgs/CallOfDutyMob.jpg",
     "FREE",
     "Call of Duty",
     9
@@ -74,7 +74,7 @@ let gameListArr = [
   new gameList(
     "mobile",
     "Battle Grounds Mobile",
-    "../imgs/pubgMob.jpg",
+    "./imgs/pubgMob.jpg",
     "FREE",
     "Battle Grounds Mobile",
     10
@@ -82,7 +82,7 @@ let gameListArr = [
   new gameList(
     "mobile",
     "Clash of Clans",
-    "../imgs/COCMob.jpg",
+    "./imgs/COCMob.jpg",
     "FREE",
     "Clash of Clans",
     11
@@ -90,26 +90,26 @@ let gameListArr = [
   new gameList(
     "mobile",
     "Clash Royale",
-    "../imgs/ClashRoyaleMob.jpg",
+    "./imgs/ClashRoyaleMob.jpg",
     "FREE",
     "Clash Royale",
     12
   ),
-  new gameList("pc", "Pay Day 2", "../imgs/PayDay.png", 9.99, "Pay Day 2", 13),
-  new gameList("pc", "GTA V", "../imgs/GtaV.jpg", 29.99, "GTA V", 14),
+  new gameList("pc", "Pay Day 2", "./imgs/PayDay.png", 9.99, "Pay Day 2", 13),
+  new gameList("pc", "GTA V", "./imgs/GtaV.jpg", 29.99, "GTA V", 14),
   new gameList(
     "pc",
     "Red Dead Redemption 2",
-    "../imgs/RedDeadRedemption2.jpg",
+    "./imgs/RedDeadRedemption2.jpg",
     99.99,
     "RDR2",
     15
   ),
-  new gameList("pc", "Fortnite", "../imgs/Fortnite.jpg", "Fortnite", 16),
+  new gameList("pc", "Fortnite", "./imgs/Fortnite.jpg", "Fortnite", 16),
   new gameList(
     "pc",
     "Cyberpunk 2077",
-    "../imgs/CyberPunk.jpg",
+    "./imgs/CyberPunk.jpg",
     59.99,
     "Cyberpunk 2077",
     17
@@ -117,16 +117,16 @@ let gameListArr = [
   new gameList(
     "pc",
     "Counter-Strike: Global Offensive",
-    "../imgs/CS_GO.jpg",
+    "./imgs/CS_GO.jpg",
     "FREE",
     "CS GO",
     18
   ),
-  new gameList("pc", "Far Cry 6", "../imgs/FarCry6.jpg", 25, "Far Cry 6", 19),
+  new gameList("pc", "Far Cry 6", "./imgs/FarCry6.jpg", 25, "Far Cry 6", 19),
   new gameList(
     "pc",
     "The Witcher 3",
-    "../imgs/TheWitcher3.jpg",
+    "./imgs/TheWitcher3.jpg",
     39.99,
     "Far Cry 6",
     20
