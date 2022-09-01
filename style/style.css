@@ -248,6 +248,24 @@ header .action .searchBx input {
   color: #050e2d;
   box-shadow: 0 0 10px #1aeeef;
 }
+.games ul li button {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.games ul li button:hover {
+  border: 1px solid #1aeeef;
+  background: #1aeeef;
+  color: #050e2d;
+  box-shadow: 0 0 10px #1aeeef;
+}
 
 .games .cardBx {
   width: 100%;
@@ -305,6 +323,44 @@ header .action .searchBx input {
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
+/*List Container*/
+#listContainer {
+  display: flex;
+  /* flex-direction: row; */
+  width: 80%;
+}
+
+#listContainer.d-none {
+  display: none;
+}
+
+#cardsGrid.d-none {
+  display: none;
+}
+
+#listContainer .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 20%;
+  border-radius: 10px;
+  background-color: #1b2141;
+  padding-right: 2rem;
+}
+
+#listContainer .card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+#listContainer .card .content {
+  width: 70%;
+}
+/************************/
 @keyframes animate {
   100% {
     transform: scaleX(1);

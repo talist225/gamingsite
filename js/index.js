@@ -1,3 +1,21 @@
+/*Display Mode*/
+let displayModeNow = "cardsGrid";
+
+const handleDisplayModeNow = (selectModeNum) => {
+  document.getElementById(displayModeNow).classList.add("d-none");
+  switch (selectModeNum) {
+    case 1:
+      displayModeNow = "cardsGrid";
+      localStorage.setItem("selectMode", 1);
+      break;
+    case 2:
+      displayModeNow = "listContainer";
+      localStorage.setItem("selectMode", 2);
+      break;
+  }
+  document.getElementById(displayModeNow).classList.remove("d-none");
+};
+
 /*Sticky Navbar*/
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
@@ -20,6 +38,7 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+
 /* Cards Filter */
 let list = document.querySelectorAll(".list");
 let card = document.querySelectorAll(".card");
@@ -117,3 +136,12 @@ function handleFilterPopup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+const initPageLoad = () => {
+  let selectModeFromls = localStorage.getItem("selectMode");
+  if (selectModeFromls) {
+    handleDisplayModeNow(+selectModeFromls);
+  }
+};
+
+initPageLoad();

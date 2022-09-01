@@ -59,8 +59,8 @@ let gameListArr = [
     "mobile",
     "Archero",
     "./imgs/ArcheroMob.jpg",
-    "Archero",
     "FREE",
+    "Archero",
     8
   ),
   new gameList(
@@ -105,7 +105,7 @@ let gameListArr = [
     "RDR2",
     15
   ),
-  new gameList("pc", "Fortnite", "./imgs/Fortnite.jpg", "Fortnite", 16),
+  new gameList("pc", "Fortnite", "./imgs/Fortnite.jpg", "FREE", "Fortnite", 16),
   new gameList(
     "pc",
     "Cyberpunk 2077",
@@ -132,3 +132,5 @@ let gameListArr = [
     20
   ),
 ];
+
+const cloneGameListArr = _.cloneDeep(gameListArr);

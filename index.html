@@ -90,12 +90,18 @@
             />
           </div>
         </li>
+        <li>
+          <label>Show As:</label>
+          <button onclick="handleDisplayModeNow(1)">CARD</button>
+          <button onclick="handleDisplayModeNow(2)">LIST</button>
+        </li>
       </ul>
-      <!--Cards-->
-      <div class="games">
-        <div id="cardsGrid" class="cardBx"></div>
-      </div>
-      <!--Cards end-->
+      <!--Cards Grid-->
+      <div id="cardsGrid" class="cardBx"></div>
+      <!--Cards Grid End-->
+      <!--Cards List-->
+      <div id="listContainer" class="cardBx"></div>
+      <!--Cards List End-->
       <!-- <div class="cardBx">
          <div class="card" data-item="pc">
           <img src="./imgs/EldenRing.jpg" alt="" />
@@ -396,9 +402,11 @@
         </ul>
       </div>
     </footer>
+
     <script src="./js/models/gameList.model.js"></script>
     <script src="./js/dataInitializtion.js"></script>
     <script src="./js/components/cardsGrid.js"></script>
+    <script src="./js/components/listContainer.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
