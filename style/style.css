@@ -96,6 +96,16 @@ header .action .searchBx input {
   width: 100%;
 }
 
+header i {
+  color: #dbd9d9;
+  font-size: 2.5em;
+  transition: 0.2s;
+}
+
+header i:hover {
+  color: #1aeeef;
+}
+
 /* Home Banner */
 .banner {
   position: relative;
@@ -321,6 +331,16 @@ header .action .searchBx input {
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.games .cardBx .card .info i {
+  color: #dbd9d9;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+.games .cardBx .card .info i:hover {
+  color: rgb(248, 85, 85);
 }
 
 /*List Container*/

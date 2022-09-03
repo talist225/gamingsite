@@ -133,4 +133,4 @@ let gameListArr = [
   ),
 ];
 
-const cloneGameListArr = _.cloneDeep(gameListArr);
+// const cloneGameListArr = _.cloneDeep(gameListArr);

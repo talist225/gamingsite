@@ -23,6 +23,7 @@ const initializeCardsGrid = () => {
   </div>
       <div class="progress-line"><span></span></div>
       <div class="info">
+      <i class='bx bxs-heart'></i>
         <p>Price<br /><span>$${gameListItem.price}</span></p>
         <a href="#">Play Now</a>
       </div>
