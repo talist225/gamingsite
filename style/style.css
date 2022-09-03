@@ -96,14 +96,93 @@ header .action .searchBx input {
   width: 100%;
 }
 
-header i {
-  color: #dbd9d9;
-  font-size: 2.5em;
-  transition: 0.2s;
+/*Cart*/
+header button {
+  background: none;
+  border: none;
 }
 
-header i:hover {
+header .open-cart i {
+  color: #dbd9d9;
+  font-size: 3em;
+  transition: 0.2s;
+  background-color: none;
+  border: none;
+  border-radius: none;
+}
+
+header .open-cart i:hover {
   color: #1aeeef;
+}
+
+#cartDivToDisplay.cart {
+  position: fixed;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  left: 80%;
+  top: 10%;
+  background: #1b2141;
+  border-radius: 10px;
+  color: #dbd9d9;
+}
+
+#cartDivToDisplay.cart .cart-content span {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+#cartDivToDisplay.cart .cart-content span p {
+  font-size: 1.2em;
+}
+
+#cartDivToDisplay.cart .cart-content span .cardBtn:hover {
+  text-decoration: none;
+}
+
+.table li {
+  border-radius: 3px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+.table .table-header {
+  font-size: 14px auto;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  justify-content: space-around;
+  font-weight: 700;
+}
+.table .table-row {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+.table .table-row:hover {
+  background: #1aeeef;
+  border: none;
+  color: #050e2d;
+  box-shadow: 0 0 10px #1aeeef;
+}
+.table .col-1 {
+  flex-basis: 25%;
+}
+.table .col-2 {
+  flex-basis: 25%;
+}
+.table .col-3 {
+  flex-basis: 25%;
+}
+.table .col-4 {
+  flex-basis: 25%;
 }
 
 /* Home Banner */

@@ -13,6 +13,7 @@
   </head>
   <body>
     <div id="modalDivToDisplay" class="modal-wrapper"></div>
+    <div id="cartDivToDisplay" class="cart"></div>
     <header>
       <a href="#" class="logo">Game Zone</a>
       <ul class="nav">
@@ -30,7 +31,9 @@
         </div>
       </div>
       <div class="toggleMenu" onclick="toggleMenu()"></div>
-      <i class="bx bx-cart"></i>
+      <button id="cart" class="open-cart" onclick="displayCart()">
+        <i class="bx bx-cart"></i>
+      </button>
     </header>
     <!--Home Banner-->
     <div class="banner animeX" id="home">
@@ -75,8 +78,8 @@
       <h2>Popular Games</h2>
       <ul>
         <li class="list active" data-filter="all">ALL</li>
-        <li class="list" data-filter="pc">PC</li>
-        <li class="list" data-filter="mobile">MOBILE</li>
+        <li class="list" data-filter="PC">PC</li>
+        <li class="list" data-filter="Mobile">MOBILE</li>
         <li>
           <div class="filterBx">
             <div class="popup" onclick="handleFilterPopup()">
@@ -408,6 +411,7 @@
     <script src="./js/models/gameList.model.js"></script>
     <script src="./js/dataInitializtion.js"></script>
     <script src="./js/components/modal.component.js"></script>
+    <script src="./js/components/cart.component.js"></script>
     <script src="./js/components/cardsGrid.js"></script>
     <script src="./js/components/listContainer.js"></script>
     <script src="./js/index.js"></script>
