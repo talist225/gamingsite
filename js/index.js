@@ -76,31 +76,31 @@ function toggleMenu() {
 
 /*Modal*/
 
-// Get the modal
-var modal = document.querySelectorAll("#myModal");
+// // Get the modal
+// var modal = document.querySelectorAll("#myModal");
 
-// Get the button that opens the modal
-var btn = document.querySelectorAll("#myBtn");
+// // Get the button that opens the modal
+// var btn = document.querySelectorAll("#myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.querySelectorAll(".close");
+// // Get the <span> element that closes the modal
+// var span = document.querySelectorAll(".close");
 
 // When the user clicks on the button, open the modal
-for (let i = 0; i < btn.length; i++) {
-  btn[i].onclick = function () {
-    modal[i].style.display = "block";
-  };
+// for (let i = 0; i < btn.length; i++) {
+  // btn[i].onclick = function () {
+    // modal[i].style.display = "block";
+  // };
   // When the user clicks on <span> (x), close the modal
-  span[i].onclick = function () {
-    modal[i].style.display = "none";
-  };
+  // span[i].onclick = function () {
+  //   modal[i].style.display = "none";
+  // };
   // When the user clicks anywhere outside of the modal, close it
-  modal[i].onclick = function (event) {
-    if (event.target == modal[i]) {
-      modal[i].style.display = "none";
-    }
-  };
-}
+  // modal[i].onclick = function (event) {
+  //   if (event.target == modal[i]) {
+  //     modal[i].style.display = "none";
+  //   }
+  // };
+// }
 
 /*Filter*/
 document.querySelector("#searchInput").addEventListener("input", filterList);
