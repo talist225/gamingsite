@@ -21,7 +21,7 @@ const displayCart = (id) => {
       <li class="table-row">
       <div class="col col-1">${gameListArr[cartToDisplay].dataItem}</div>
       <div class="col col-2">${gameListArr[cartToDisplay].title}</div>
-      <div class="col col-3">${gameListArr[cartToDisplay].price}</div>
+      <div class="col col-3">$${gameListArr[cartToDisplay].price}</div>
         <div class="col col-4"> <a href="#">Remove</a></div>
         
        
@@ -36,7 +36,7 @@ const displayCart = (id) => {
   </div>
   <span>
   <p>
-  Total Price: ${gameListArr[cartToDisplay].price}</p>
+  Total Price: $${gameListArr[cartToDisplay].price}</p>
   <div class="cardBtn">
   <a href="#">Buy Now</a>
   </span>
