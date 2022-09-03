@@ -172,6 +172,11 @@ header .open-cart i:hover {
   color: #050e2d;
   box-shadow: 0 0 10px #1aeeef;
 }
+
+.table .table-row div a {
+  color: #1aeeef;
+  text-decoration: none;
+}
 .table .col-1 {
   flex-basis: 25%;
 }
