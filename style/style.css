@@ -100,6 +100,7 @@ header .action .searchBx input {
 header button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 header .open-cart i {
