@@ -3,7 +3,6 @@ const initializeList = () => {
   listContainer.innerHTML = "";
   for (let gameListItem of gameListArr) {
     listContainer.innerHTML += `
-    
     <div class="card" data-item="${gameListItem.dataItem}">
     <img src="${gameListItem.imgUrl}" alt="">
     <div class="content">

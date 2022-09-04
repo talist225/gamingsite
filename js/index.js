@@ -1,6 +1,15 @@
 /*Display Mode*/
 let displayModeNow = "cardsGrid";
 
+/*Cart Array*/
+let cartArr = [];
+if (localStorage.getItem("cartArr")) {
+  cartArr = localStorage.getItem("cartArr").split(",");
+} else {
+  localStorage.setItem("cartArr", cartArr);
+}
+
+/*Display Mode*/
 const handleDisplayModeNow = (selectModeNum) => {
   document.getElementById(displayModeNow).classList.add("d-none");
   switch (selectModeNum) {
@@ -87,19 +96,19 @@ function toggleMenu() {
 
 // When the user clicks on the button, open the modal
 // for (let i = 0; i < btn.length; i++) {
-  // btn[i].onclick = function () {
-    // modal[i].style.display = "block";
-  // };
-  // When the user clicks on <span> (x), close the modal
-  // span[i].onclick = function () {
-  //   modal[i].style.display = "none";
-  // };
-  // When the user clicks anywhere outside of the modal, close it
-  // modal[i].onclick = function (event) {
-  //   if (event.target == modal[i]) {
-  //     modal[i].style.display = "none";
-  //   }
-  // };
+// btn[i].onclick = function () {
+// modal[i].style.display = "block";
+// };
+// When the user clicks on <span> (x), close the modal
+// span[i].onclick = function () {
+//   modal[i].style.display = "none";
+// };
+// When the user clicks anywhere outside of the modal, close it
+// modal[i].onclick = function (event) {
+//   if (event.target == modal[i]) {
+//     modal[i].style.display = "none";
+//   }
+// };
 // }
 
 /*Filter*/

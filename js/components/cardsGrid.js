@@ -11,7 +11,7 @@ const initializeCardsGrid = () => {
     </button></h4>
     <div class="progress-line"><span></span></div>
       <div class="info">
-      <i class='bx bxs-heart'></i>
+      <i class='bx bxs-heart' id="addToCart${gameListItem.id}"></i>
         <p>Price<br /><span>$${gameListItem.price}</span></p>
         <a href="#">Play Now</a>
       </div>
@@ -24,6 +24,13 @@ const initializeCardsGrid = () => {
       .getElementById(`myBtn${gameListItem.id}`)
       .addEventListener("click", () => {
         displayModal(gameListItem.id);
+      });
+    document
+      .getElementById(`addToCart${gameListItem.id}`)
+      .addEventListener("click", () => {
+        cartArr.push(`${gameListItem.id}`);
+        localStorage.setItem("cartArr", cartArr);
+        displayCart();
       });
   }
 };
