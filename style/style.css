@@ -103,7 +103,8 @@ header button {
   cursor: pointer;
 }
 
-header .open-cart i {
+header .open-cart i,
+header button i {
   color: #dbd9d9;
   font-size: 3em;
   transition: 0.2s;

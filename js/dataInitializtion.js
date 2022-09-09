@@ -128,7 +128,7 @@ let gameListArr = [
     "The Witcher 3",
     "./imgs/TheWitcher3.jpg",
     39.99,
-    "Far Cry 6",
+    "The Witcher 3",
     20
   ),
 ];

@@ -4,9 +4,9 @@ let displayModeNow = "cardsGrid";
 /*Cart Array*/
 let cartArr = [];
 if (localStorage.getItem("cartArr")) {
-  cartArr = localStorage.getItem("cartArr").split(",");
+  cartArr = JSON.parse(localStorage.getItem("cartArr"));
 } else {
-  localStorage.setItem("cartArr", cartArr);
+  localStorage.setItem("cartArr", JSON.stringify(cartArr));
 }
 
 /*Display Mode*/
