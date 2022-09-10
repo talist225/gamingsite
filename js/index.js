@@ -9,6 +9,14 @@ if (localStorage.getItem("cartArr")) {
   localStorage.setItem("cartArr", JSON.stringify(cartArr));
 }
 
+document.querySelector("#cart").addEventListener("click", () => {
+  if (document.querySelector("#cartDivToDisplay").innerHTML) {
+    document.querySelector("#cartDivToDisplay").innerHTML = "";
+  } else {
+    displayCart();
+  }
+});
+
 /*Display Mode*/
 const handleDisplayModeNow = (selectModeNum) => {
   document.getElementById(displayModeNow).classList.add("d-none");

@@ -65,14 +65,6 @@ const displayCart = () => {
   });
 };
 
-document.querySelector("#cart").addEventListener("click", () => {
-  if (document.querySelector("#cartDivToDisplay").innerHTML) {
-    document.querySelector("#cartDivToDisplay").innerHTML = "";
-  } else {
-    displayCart();
-  }
-});
-
 const deleteItem = (id) => {
   const deleteItem = document.getElementById("remove");
   deleteItem.remove(".table-row");
@@ -84,6 +76,6 @@ const deleteItem = (id) => {
     }
   }
   cartArr.splice(index, 1);
-  localStorage.setItem("cartArr", cartArr);
+  localStorage.setItem("cartArr", JSON.stringify(cartArr));
   displayCart();
 };

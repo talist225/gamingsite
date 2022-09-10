@@ -29,7 +29,7 @@ const initializeCardsGrid = () => {
       .getElementById(`addToCart${gameListItem.id}`)
       .addEventListener("click", () => {
         cartArr.push(`${gameListItem.id}`);
-        localStorage.setItem("cartArr", cartArr);
+        localStorage.setItem("cartArr", JSON.stringify(cartArr));
         displayCart();
       });
   }
