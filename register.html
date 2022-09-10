@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/loginContainer.css" />
+    <link rel="stylesheet" href="./style/register.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="modalDivToDisplay" class="modal-wrapper"></div>
+    <div id="cartDivToDisplay" class="cart"></div>
+
+    <header>
+      <a href="#" class="logo">Game Zone</a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Games</a></li>
+        <li><a href="index.html">Tournaments</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="./newsupdates.html">News & Updates</a></li>
+      </ul>
+      <div class="action">
+        <div class="searchBx">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <input type="text" placeholder="Search Game" aria-label="Filter" />
+        </div>
+      </div>
+      <div class="toggleMenu" onclick="toggleMenu()"></div>
+      <button id="cart" class="open-cart">
+        <i class="bx bxs-cart"></i>
+      </button>
+      <div id="loginDivToDisplay" class="login"></div>
+    </header>
+  <body>
+<!--Register Section-->
+
+<!--Register Section End-->
+    <script src="./js/components/login.component.js"></script>
+    <script src="./js/components/cart.component.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

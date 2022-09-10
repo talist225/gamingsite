@@ -21,6 +21,10 @@ const handleDisplayModeNow = (selectModeNum) => {
       displayModeNow = "listContainer";
       localStorage.setItem("selectMode", 2);
       break;
+    case 3:
+      displayModeNow = "carouselContainer";
+      localStorage.setItem("selectMode", 3);
+      break;
   }
   document.getElementById(displayModeNow).classList.remove("d-none");
 };

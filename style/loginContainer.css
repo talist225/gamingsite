@@ -1,0 +1,125 @@
+header button i:hover {
+  color: #1aeeef;
+}
+
+.loginModal {
+  position: fixed;
+  display: none;
+  width: 25%;
+  height: auto;
+  left: 38%;
+  top: 30%;
+  padding: 1rem;
+  background: #35407e;
+  border-radius: 10px;
+  color: #dbd9d9;
+  z-index: 1;
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: #35407e;
+}
+
+.login-content h2 {
+  padding-bottom: 1em;
+}
+
+.login-content input {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #1aeeef;
+}
+
+.login-content input::placeholder {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.login-content div a {
+  font-size: 0.9em;
+}
+
+.login-content div button,
+.login-content div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  margin: 10px 0;
+  border: 1px solid #1aeeef;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.login-content div button,
+.login-content a {
+  margin: 0.5em;
+}
+
+.login-content div button:hover,
+.login-content a:hover {
+  background: #1aeeef;
+  border: none;
+  color: #050e2d;
+  box-shadow: 0 0 10px #1aeeef;
+}
+
+.login-content .checkbox input {
+  width: auto;
+}
+
+.login-content .checkbox:hover {
+  color: #1aeeef;
+  transition: 0.2s;
+}
+
+.login-content div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1em;
+}
+
+.close {
+  color: #dbd9d9;
+  margin: 1rem;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: #1aeeef;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .loginModal {
+    width: 80%;
+    left: 3%;
+  }
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaming Website</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/loginContainer.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,6 +15,7 @@
   <body>
     <div id="modalDivToDisplay" class="modal-wrapper"></div>
     <div id="cartDivToDisplay" class="cart"></div>
+
     <header>
       <a href="#" class="logo">Game Zone</a>
       <ul class="nav">
@@ -34,11 +36,10 @@
       <button id="cart" class="open-cart">
         <i class="bx bxs-cart"></i>
       </button>
-      <button>
-        <i class="bx bxs-user-circle"></i>
-      </button>
+      <div id="loginDivToDisplay" class="login"></div>
     </header>
     <!--Home Banner-->
+
     <div class="banner animeX" id="home">
       <div class="bg">
         <div class="content">
@@ -100,8 +101,15 @@
         </li>
         <li>
           <label>Show As:</label>
-          <button onclick="handleDisplayModeNow(1)">CARD</button>
-          <button onclick="handleDisplayModeNow(2)">LIST</button>
+          <button onclick="handleDisplayModeNow(1)">
+            <i class="bx bxs-grid"></i>
+          </button>
+          <button onclick="handleDisplayModeNow(2)">
+            <i class="bx bx-list-ul"></i>
+          </button>
+          <button onclick="handleDisplayModeNow(3)">
+            <i class="bx bx-carousel"></i>
+          </button>
         </li>
       </ul>
       <!--Cards Grid-->
@@ -290,6 +298,7 @@
           </div>
         </div>
       </div> -->
+      <div id="carouselContainer" class="cardBx"></div>
     </div>
 
     <!--Tournaments-->
@@ -414,9 +423,11 @@
     <script src="./js/models/gameList.model.js"></script>
     <script src="./js/dataInitializtion.js"></script>
     <script src="./js/components/modal.component.js"></script>
+    <script src="./js/components/login.component.js"></script>
     <script src="./js/components/cart.component.js"></script>
     <script src="./js/components/cardsGrid.js"></script>
     <script src="./js/components/listContainer.js"></script>
+    <script src="./js/components/carousel.component.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
