@@ -535,6 +535,7 @@ header .open-cart i:hover {
   color: #dbd9d9;
   font-size: 1.5em;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .games .cardBx .card .info i:hover {
