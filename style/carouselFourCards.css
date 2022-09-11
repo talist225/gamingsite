@@ -1,0 +1,34 @@
+.carouselContainer {
+  position: relative;
+}
+
+.carouselContainer .left-arrow {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 5em;
+  color: #fff;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.carouselContainer .right-arrow {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 5em;
+  color: #fff;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.carouselContainer .left-arrow:hover,
+.carouselContainer .right-arrow:hover {
+  color: #1aeeef;
+}
+
+#carouselContainer.d-none {
+  display: none;
+}
