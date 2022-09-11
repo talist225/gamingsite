@@ -1,6 +1,6 @@
 /*Display Mode*/
-let displayModeNow = "cardsGrid";
-
+let selectMode = 1;
+let displayModeNow;
 /*Cart Array*/
 let cartArr = [];
 if (localStorage.getItem("cartArr")) {
@@ -19,7 +19,10 @@ document.querySelector("#cart").addEventListener("click", () => {
 
 /*Display Mode*/
 const handleDisplayModeNow = (selectModeNum) => {
-  document.getElementById(displayModeNow).classList.add("d-none");
+  if (displayModeNow) {
+    document.getElementById(displayModeNow).classList.add("d-none");
+  }
+
   switch (selectModeNum) {
     case 1:
       displayModeNow = "cardsGrid";
@@ -95,34 +98,6 @@ function toggleMenu() {
   nav.classList.toggle("active");
 }
 
-/*Modal*/
-
-// // Get the modal
-// var modal = document.querySelectorAll("#myModal");
-
-// // Get the button that opens the modal
-// var btn = document.querySelectorAll("#myBtn");
-
-// // Get the <span> element that closes the modal
-// var span = document.querySelectorAll(".close");
-
-// When the user clicks on the button, open the modal
-// for (let i = 0; i < btn.length; i++) {
-// btn[i].onclick = function () {
-// modal[i].style.display = "block";
-// };
-// When the user clicks on <span> (x), close the modal
-// span[i].onclick = function () {
-//   modal[i].style.display = "none";
-// };
-// When the user clicks anywhere outside of the modal, close it
-// modal[i].onclick = function (event) {
-//   if (event.target == modal[i]) {
-//     modal[i].style.display = "none";
-//   }
-// };
-// }
-
 /*Filter*/
 document.querySelector("#searchInput").addEventListener("input", filterList);
 
@@ -131,15 +106,7 @@ function filterList() {
   const filter = searchInput.value.toLowerCase();
   const h4item = document.querySelectorAll(".card h4");
   const cardItems = document.querySelectorAll(".card");
-  // h4item.forEach((item) => {
-  //   let text = item.textContent;
-  //   if (text.toLowerCase().includes(filter.toLowerCase())) {
-  //     cardItems.style.display = "";
-  //   } else {
-  //     cardItems.style.display = "none";
-  //   }
 
-  // })
   for (let i = 0; i < h4item.length; i++) {
     let text = h4item[i].textContent;
     if (text.toLowerCase().includes(filter.toLowerCase())) {
@@ -159,9 +126,11 @@ function handleFilterPopup() {
 }
 
 const initPageLoad = () => {
-  let selectModeFromls = localStorage.getItem("selectMode");
+  selectModeFromls = localStorage.getItem("selectMode");
   if (selectModeFromls) {
     handleDisplayModeNow(+selectModeFromls);
+  } else {
+    handleDisplayModeNow(selectMode);
   }
 };
 
